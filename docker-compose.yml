@@ -13,7 +13,7 @@ services:
     container_name: prometheus
     restart: always
     extra_hosts:
-      - host.gateway:${HOST_GATEWAY}
+      - "host.gateway:host-gateway"
     command:
       - --config.file=/etc/prometheus/prometheus.yml
     volumes:
